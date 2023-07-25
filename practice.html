@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Days Until Christmas</title>
+  </head>
+  <body>
+    <button onclick="calculateDays()">Calculate Days Until Christmas</button>
+    <p id="days"></p>
+
+    <script>
+      function calculateDays() {
+        // Get today's date and the date of Christmas
+        var today = new Date();
+        var christmas = new Date(today.getFullYear(), 11, 25);
+
+        // Calculate the time difference in milliseconds
+        var diff = christmas.getTime() - today.getTime();
+
+        // Convert the time difference to days
+        var days = Math.ceil(diff / (1000 * 60 * 60 * 24));
+
+        // Display the number of days left
+        document.getElementById("days").innerHTML = "There are " + days + " days left until Christmas!";
+      }
+    </script>
+  </body>
+</html>

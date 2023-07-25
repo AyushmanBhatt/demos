@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--LISTS-->
+    <!--Both the lists have more than one attribute which we can write using the type command-->
+    <ul type="circle">      <!--Unordered list-->
+        <li>This is the first item of my unordered list</li>
+        <ul>        <!--HTML also allows the nesting of lists. It simply means we can add a list into another list.-->
+            <li>Sub-unordered list 1</li>
+            <li>Sub-unordered list 2</li>
+            <li>Sub-unordered list 3</li>
+        </ul>
+        <li>This is the second item of my unordered list</li>
+        <li>This is the third item of my unordered list</li>
+    </ul>
+    <ol type="I">       <!--Ordered list-->
+        <li>This is the first item of my ordered list</li>
+        <li>This is the first item of my ordered list</li>
+        <li>This is the first item of my ordered list</li>
+    </ol>
+
+    <!--TABLES-->
+    <h2>HTML Employee Table</h2>
+    <table>
+        <thead>     <!--Head of the table-->
+            <!--<tr> is used to justify that it is the part of a row.-->
+                <!--Inside the <tr> tag, we give the headings of a row under the <th> tag-->
+            <tr>
+                <th>Name</th>
+                <th>Employee ID</th>
+                <th>Birth Year</th>
+                <th>Employee Role</th>
+            </tr>
+        </thead>
+        <tbody>     <!--Body of the table-->
+            <!--To add more rows to the table, we can simply add a <tr> tag and add any number of rows in a table.-->
+                <!--Inside the <tr> tag, we give the data of a row under the <th> tag-->
+            <tr>
+                <td>Ayushman Bhatt</td>
+                <td>56942</td>
+                <td>2002</td>
+                <td>Full Stack Developer</td>
+            </tr>
+            <tr>
+                <td>Tanisha Gusain</td>
+                <td>96482</td>
+                <td>2001</td>
+                <td>Full Stack Developer</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

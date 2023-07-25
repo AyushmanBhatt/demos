@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function m1()
+        {
+            var v=confirm("Are you sure?");
+            if(v==true)
+            {
+                alert("YES");
+            }
+            else{
+                alert("NO");
+            }
+        }
+        function m2()
+        {
+            var v=prompt("What is your name?");
+            alert("I am "+v);
+        }
+        function m3()
+        {
+            alert("Just an alert");
+        }
+        function m4()
+        {
+            open("https://www.google.com/");
+        }
+        function m5()
+        {
+            setTimeout(function(){
+                alert("This is an alert after 2 sec");},3000);
+        }
+    </script>
+    <input type="button" value="Confirm" onclick="m1()">
+    <input type="button" value="prompt" onclick="m2()">
+    <input type="button" value="alert" onclick="m3()">
+    <input type="button" value="open" onclick="m4()">
+    <input type="button" value="setTimeout" onclick="m5()">
+</body>
+</html>
